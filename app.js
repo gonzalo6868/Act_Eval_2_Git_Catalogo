@@ -93,11 +93,8 @@ movieList.addEventListener("click", (e) => {
 
   const id = Number(li.dataset.id);
 
-  if (btn.dataset.action === "edit") {
-    editMovieById(id);
-  if (btn.dataset.action === "delete") {
-    deleteMovieById(id);
-  }
+  if (btn.dataset.action === "edit") editMovieById(id);
+  if (btn.dataset.action === "delete") deleteMovieById(id);
 });
 
 renderMovies();
